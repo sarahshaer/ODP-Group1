@@ -75,7 +75,7 @@ function ready(error, world, names, values) {
     var local_max = 0; 
     var tryit2 = values.filter(function(n) { return d.name == n.Country; })[0];
     if (typeof tryit2 === "undefined"){
-//	console.log("Failed to find data for: " + d.name);
+	console.log("Failed to find data for: " + d.name);
     } else {
 	d.value = parseInt(tryit2[config.column_title].replace(/\,/g,''));
 	if (d.value > max_value) {
